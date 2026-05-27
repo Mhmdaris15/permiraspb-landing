@@ -1,0 +1,25 @@
+services:
+  permira:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      # Coolify magic var: SERVICE_FQDN_<SERVICENAME>_<INTERNALPORT>
+      # Binds the public domain to this service's port 80 and triggers
+      # automatic Let's Encrypt SSL. Edit the domain here OR in the Coolify UI.
+      - SERVICE_FQDN_PERMIRA_80=https://permiraspb.org
+    expose:
+      - "80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+    # ── Standalone (non-Coolify) use ──
+    # Coolify's proxy handles ports automatically, so leave `ports` commented.
+    # To run this compose directly on a host, uncomment:
+    # ports:
+    #   - "8080:80"
