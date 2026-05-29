@@ -5,7 +5,7 @@ import farrell from "../../assets/permira-members/Farrell pj wakil ketua copy.pn
 import riski from "../../assets/permira-members/Rai pj Sekretaris copy.png";
 import aji from "../../assets/permira-members/aji pj sekre copy.png";
 import bima from "../../assets/permira-members/Bima pj Bendahara copy.png";
-import aris from "../../assets/permira-members/Aris Tech Specialist.jpg";
+import aris from "../../assets/permira-members/Aris Septanugroho.jpg";
 import daryn from "../../assets/permira-members/Daryn pj PSDMK copy.png";
 import abyantara from "../../assets/permira-members/BYAN Kemahasiswaan pj.png";
 import moreno from "../../assets/permira-members/Moreno pj psdmk copy.png";

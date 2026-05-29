@@ -25,6 +25,7 @@ export const Chrome = () => {
         </div>
         <nav className="nav">
           <a href="#manifesto">Manifesto</a>
+          <a href="#city">City</a>
           <a href="#chapters">Chapters</a>
           <a href="#dispatches">Dispatches</a>
           <a href="#documentation">Field</a>

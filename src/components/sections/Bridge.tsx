@@ -1,4 +1,8 @@
-/** Two opposing-direction marquees bridging tropics → tundra. */
+import flagID from "../../assets/Flag_of_Indonesia.png";
+import flagSPB from "../../assets/Flag_of_St_Petersburg_(Russia).png";
+import flagRU from "../../assets/Flag_of_Russia.png";
+
+/** Tropics → tundra bridge: two opposing marquees with a flag strip between. */
 export const Bridge = () => (
   <div className="bridge">
     <div className="marquee" aria-hidden="true">
@@ -31,7 +35,25 @@ export const Bridge = () => (
         <span>·</span>
       </div>
     </div>
-    <div className="marquee rev" aria-hidden="true" style={{ marginTop: 18 }}>
+
+    <div className="bridge-flags" aria-label="Indonesia · Saint Petersburg · Russia">
+      <span className="flag">
+        <img src={flagID} alt="" />
+        <b>Indonesia</b>
+      </span>
+      <span className="sep" />
+      <span className="flag">
+        <img src={flagSPB} alt="" />
+        <b>Санкт-Петербург</b>
+      </span>
+      <span className="sep" />
+      <span className="flag">
+        <img src={flagRU} alt="" />
+        <b>Россия</b>
+      </span>
+    </div>
+
+    <div className="marquee rev" aria-hidden="true">
       <div className="item">
         <span>JAKARTA</span>
         <span>·</span>

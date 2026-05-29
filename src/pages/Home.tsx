@@ -3,6 +3,7 @@ import { Atmosphere } from "../components/atmosphere/Atmosphere";
 import { Chrome } from "../components/layout/Chrome";
 import { Hero } from "../components/sections/Hero";
 import { Manifesto } from "../components/sections/Manifesto";
+import { City } from "../components/sections/City";
 import { Chapters } from "../components/sections/Chapters";
 import { Bridge } from "../components/sections/Bridge";
 import { Dispatches } from "../components/sections/Dispatches";
@@ -23,6 +24,7 @@ export const Home = () => {
       <Chrome />
       <Hero />
       <Manifesto />
+      <City />
       <Chapters />
       <Bridge />
       <Dispatches />
