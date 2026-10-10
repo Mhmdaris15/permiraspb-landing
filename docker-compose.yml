@@ -1,8 +1,7 @@
 services:
   permira:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/mhmdaris15/permiraspb-landing:${IMAGE_TAG:-main}
+    pull_policy: always
     restart: unless-stopped
     environment:
       # Coolify magic var: SERVICE_FQDN_<SERVICENAME>_<INTERNALPORT>
