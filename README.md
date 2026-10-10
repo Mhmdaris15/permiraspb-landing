@@ -99,7 +99,9 @@ generated `web/*.webp`.
 ## Deployment
 
 Containerised and deployed on **Coolify** via Docker Compose, with automatic
-Let's Encrypt SSL on `permiraspb.org`.
+Let's Encrypt SSL on `permiraspb.org`. Production images are built on GitHub
+Actions and published to GHCR (`ghcr.io/mhmdaris15/permiraspb-landing`), then
+Coolify pulls and runs the selected image tag.
 
 ```bash
 docker build -t permiraspb .
